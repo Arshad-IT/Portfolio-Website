@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0F0A1A">
+    <title>Arshad Ali — Web &amp; App Developer</title>
+    
+    <!-- SEO & Metadata -->
+    <meta name="description" content="Portfolio of Arshad Ali — Web &amp; App Developer specializing in responsive modern web applications and native Android development.">
+    <meta name="author" content="Arshad Ali">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Arshad Ali, Web Developer, Android Developer, Java, JavaScript, Portfolio, Frontend, Mobile Apps">
+    <link rel="canonical" href="https://arshad-it.github.io/">
+
+    <!-- Open Graph / Facebook / LinkedIn / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://arshad-it.github.io/">
+    <meta property="og:title" content="Arshad Ali — Web &amp; App Developer">
+    <meta property="og:description" content="I build modern, responsive websites and useful Android applications that solve real problems.">
+    <meta property="og:image" content="assets/images/hero-desktop.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arshad Ali — Web &amp; App Developer">
+    <meta name="twitter:description" content="I build modern, responsive websites and useful Android applications that solve real problems.">
+    <meta name="twitter:image" content="assets/images/hero-desktop.png">
+
+    <!-- Favicons & App Manifest -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Preload Hero Images for Instant LCP -->
+    <link rel="preload" as="image" href="assets/images/hero-desktop.webp" media="(min-width: 1025px)" type="image/webp" fetchpriority="high">
+    <link rel="preload" as="image" href="assets/images/hero-mobile.webp" media="(max-width: 1024px)" type="image/webp" fetchpriority="high">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cursor.css">
+</head>
+<body>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container container">
+                <a href="#home" class="nav-logo" aria-label="Arshad Ali Home">
+                    <span class="nav-logo-icon">&lt;/&gt;</span>
+                    <div class="nav-logo-text">
+                        Arshad Ali
+                        <span>Developer</span>
+                    </div>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="mobile-cv-item">
+                        <a href="#contact" class="download-cv-btn mobile-cv-btn">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="#contact" class="download-cv-btn desktop-cv-btn">
+                    <i class="fa-solid fa-download"></i> Download CV
+                </a>
+
+                <button class="hamburger" aria-label="Toggle navigation menu" type="button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div class="nav-overlay" aria-hidden="true"></div>
+    </header>
+
+    <main>
+
+        <!-- ======================== HERO SECTION ======================== -->
+        <section id="home" class="hero">
+            <div class="hero-container container">
+                <div class="hero-content fade-in slide-left">
+                    <div class="hero-badge">👋 Hello, I'm</div>
+                    <h1 class="hero-title">Arshad <span class="gradient-text">Ali</span></h1>
+                    <h2 class="hero-subtitle">
+                        Web &amp; App <span class="typed-text">Developer</span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        I build modern, responsive websites and useful Android applications that solve real problems and deliver great user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn-primary">
+                            <i class="fa-solid fa-rocket"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn-outline">
+                            <i class="fa-solid fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dedicated Mobile Hero Showcase: Full developer portrait with glowing laptop & mug -->
+                <div class="hero-image-mobile fade-in slide-up">
+                    <div class="hero-mobile-frame">
+                        <picture>
+                            <source media="(min-width: 1025px)" srcset="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E">
+                            <source media="(max-width: 1024px)" srcset="assets/images/hero-mobile.webp" type="image/webp">
+                            <img src="assets/images/hero-mobile.png" alt="Arshad Ali — Web &amp; App Developer Studio with Laptop and Workspace" class="hero-mobile-img" width="941" height="1672" fetchpriority="high" loading="eager">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== TECH STRIP & SERVICE HIGHLIGHTS ======================== -->
+        <section class="hero-features">
+            <div class="container">
+                <div class="hero-bottom-wrapper">
+                    <!-- Tech Strip -->
+                    <div class="tech-strip fade-in slide-up">
+                        <div class="tech-item" title="HTML5">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="tech-item" title="CSS3">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="tech-item" title="JavaScript">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item" title="Android (Java)">
+                            <i class="fa-brands fa-android"></i>
+                            <span>Android</span>
+                        </div>
+                        <div class="tech-item" title="Firebase">
+                            <i class="fa-solid fa-fire"></i>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="tech-item" title="SQL Database">
+                            <i class="fa-solid fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Service Highlights -->
+                    <div class="service-highlights fade-in slide-up">
+                        <div class="service-highlight-card">
+                            <i class="fa-solid fa-code"></i>
+                            <div class="highlight-info">
+                                <h3 class="highlight-title">Web Development</h3>
+                                <p class="highlight-desc">Responsive &amp; Modern</p>
+                            </div>
+                        </div>
+                        <div class="service-highlight-card">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div class="highlight-info">
+                                <h3 class="highlight-title">Android Development</h3>
+                                <p class="highlight-desc">Java &amp; XML</p>
+                            </div>
+                        </div>
+                        <div class="service-highlight-card">
+                            <i class="fa-solid fa-layer-group"></i>
+                            <div class="highlight-info">
+                                <h3 class="highlight-title">Full Projects</h3>
+                                <p class="highlight-desc">From Idea to Deploy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== ABOUT SECTION ======================== -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about-container">
+                    <div class="about-image-wrapper fade-in slide-left">
+                        <div class="about-image">
+                            <picture>
+                                <source srcset="assets/images/profile.webp" type="image/webp">
+                                <img src="assets/images/profile.png" alt="About Arshad Ali" width="450" height="450" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                    </div>
+
+                    <div class="about-content fade-in slide-right">
+                        <h2 class="about-title section-title">About <strong>Me</strong></h2>
+                        <div class="about-text">
+                            <p>
+                                I'm a passionate Web and Android developer dedicated to turning ideas into functional, aesthetically refined digital products. With strong expertise in modern web technologies and native Android development, I engineer responsive websites and practical mobile applications that deliver measurable value.
+                            </p>
+                            <p>
+                                My journey in development is driven by curiosity, precision, and a desire to solve real-world problems. From architecting attendance tracking systems to crafting responsive, high-performance web applications, I enjoy every step — from UI/UX design to robust backend integration.
+                            </p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="about-btn">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== SKILLS SECTION ======================== -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title fade-in slide-up">My <strong>Skills</strong></h2>
+                <p class="section-subtitle fade-in slide-up">Technologies and frameworks I use to bring ideas to life</p>
+
+                <div class="skill-tabs fade-in slide-up">
+                    <button class="skill-tab active" data-filter="all">All</button>
+                    <button class="skill-tab" data-filter="web">Web</button>
+                    <button class="skill-tab" data-filter="android">Android</button>
+                    <button class="skill-tab" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="skill-grid">
+                    <!-- HTML -->
+                    <div class="skill-card fade-in scale-in" data-category="web">
+                        <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
+                        <h3 class="skill-name">HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="90" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+
+                    <!-- CSS -->
+                    <div class="skill-card fade-in scale-in" data-category="web">
+                        <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
+                        <h3 class="skill-name">CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="skill-card fade-in scale-in" data-category="web">
+                        <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+
+                    <!-- Java -->
+                    <div class="skill-card fade-in scale-in" data-category="android">
+                        <div class="skill-icon"><i class="fa-brands fa-java"></i></div>
+                        <h3 class="skill-name">Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="85" style="width: 85%;">85%</div>
+                        </div>
+                    </div>
+
+                    <!-- Android -->
+                    <div class="skill-card fade-in scale-in" data-category="android">
+                        <div class="skill-icon"><i class="fa-brands fa-android"></i></div>
+                        <h3 class="skill-name">Android</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="80" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+
+                    <!-- Firebase -->
+                    <div class="skill-card fade-in scale-in" data-category="tools">
+                        <div class="skill-icon"><i class="fa-solid fa-fire"></i></div>
+                        <h3 class="skill-name">Firebase</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="skill-card fade-in scale-in" data-category="tools">
+                        <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3 class="skill-name">SQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="70" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+
+                    <!-- Git -->
+                    <div class="skill-card fade-in scale-in" data-category="tools">
+                        <div class="skill-icon"><i class="fa-brands fa-git-alt"></i></div>
+                        <h3 class="skill-name">Git</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-progress="75" style="width: 75%;">75%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== PROJECTS SECTION ======================== -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title fade-in slide-up">My <strong>Projects</strong></h2>
+                <p class="section-subtitle fade-in slide-up">Some of my recent web and mobile application projects.</p>
+
+                <div class="project-filters fade-in slide-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="android">Android</button>
+                </div>
+
+                <div class="project-grid">
+                    <!-- Project 1: Attend Quick -->
+                    <div class="project-card fade-in slide-up" data-category="android">
+                        <div class="project-image">
+                            <picture>
+                                <source srcset="assets/images/project-attend-quick.webp" type="image/webp">
+                                <img src="assets/images/project-attend-quick.png" alt="Attend Quick Android App on Google Play" width="480" height="165" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-type">Android App</span>
+                            <h3 class="project-title">Attend Quick</h3>
+                            <p class="project-description">An intuitive Android attendance tracking application published on Google Play for students and teachers with real-time cloud sync.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Java</span>
+                                <span class="project-tag">Android</span>
+                                <span class="project-tag">Firebase</span>
+                                <span class="project-tag">Play Store</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://play.google.com/store/apps/details?id=com.arshad.attendquick&pcampaignid=web_share" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-google-play"></i> Google Play
+                                </a>
+                                <a href="https://github.com/arshad-it" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Periodic Table -->
+                    <div class="project-card fade-in slide-up" data-category="web">
+                        <div class="project-image">
+                            <picture>
+                                <source srcset="assets/images/project-periodic-table.webp" type="image/webp">
+                                <img src="assets/images/project-periodic-table.png" alt="Interactive Periodic Table Web App" width="480" height="165" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-type">Web Project</span>
+                            <h3 class="project-title">Periodic Table</h3>
+                            <p class="project-description">An interactive, responsive Periodic Table web application featuring dynamic element filtering, atomic data, and clean chemical categorization.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">UI/UX</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://arshad-k-it.github.io/PERIODIC-TABLE/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/arshad-k-it/PERIODIC-TABLE" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Smart Calculator -->
+                    <div class="project-card fade-in slide-up" data-category="web">
+                        <div class="project-image">
+                            <picture>
+                                <source srcset="assets/images/project-calculator.webp" type="image/webp">
+                                <img src="assets/images/project-calculator.png" alt="Smart Calculator Web App" width="480" height="165" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-type">Web Project</span>
+                            <h3 class="project-title">Smart Calculator</h3>
+                            <p class="project-description">A sleek scientific & basic calculator web application featuring smooth keyboard support, responsive grid buttons, and robust arithmetic logic.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://arshad-it.github.io/Calculator_assignment/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/arshad-it/Calculator_assignment" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Sign In & Authentication Page -->
+                    <div class="project-card fade-in slide-up" data-category="web">
+                        <div class="project-image">
+                            <picture>
+                                <source srcset="assets/images/project-signin.webp" type="image/webp">
+                                <img src="assets/images/project-signin.png" alt="Modern Sign In Page UI" width="480" height="165" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-type">Web Project</span>
+                            <h3 class="project-title">Sign In &amp; Auth UI</h3>
+                            <p class="project-description">A modern glassmorphic authentication interface featuring real-time input validation, responsive password toggles, and seamless styling.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Form Validation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://arshad-it.github.io/sign-in-page-HTML-CSS-JS/" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/arshad-it/sign-in-page-HTML-CSS-JS" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Developer Portfolio -->
+                    <div class="project-card fade-in slide-up" data-category="web">
+                        <div class="project-image">
+                            <picture>
+                                <source srcset="assets/images/project-portfolio.webp" type="image/webp">
+                                <img src="assets/images/project-portfolio.png" alt="Developer Portfolio Website" width="480" height="165" loading="lazy" decoding="async">
+                            </picture>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-type">Web Project</span>
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">A modern responsive dark glassmorphism portfolio site featuring custom scroll animations, responsive art direction, and dynamic filtering.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">HTML5</span>
+                                <span class="project-tag">CSS3</span>
+                                <span class="project-tag">JavaScript</span>
+                                <span class="project-tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#home" class="project-link">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/arshad-it" class="project-link" target="_blank" rel="noopener noreferrer">
+                                    <i class="fa-brands fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== SERVICES SECTION ======================== -->
+        <section id="services" class="services">
+            <div class="container">
+                <h2 class="section-title fade-in slide-up">My <strong>Services</strong></h2>
+                <p class="section-subtitle fade-in slide-up">Specialized development solutions tailored to your requirements</p>
+
+                <div class="service-grid">
+                    <!-- Service 1: Web Development -->
+                    <div class="service-card fade-in slide-up">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Building responsive, accessible, high-performance websites with clean modern code and pixel-perfect design.</p>
+                    </div>
+
+                    <!-- Service 2: Android Development -->
+                    <div class="service-card fade-in slide-up">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="service-title">Android Development</h3>
+                        <p class="service-description">Creating native Android apps with Java, clean architecture, responsive layouts, and robust cloud integration.</p>
+                    </div>
+
+                    <!-- Service 3: Full Projects -->
+                    <div class="service-card fade-in slide-up">
+                        <div class="service-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+                        <h3 class="service-title">Full Projects</h3>
+                        <p class="service-description">End-to-end full lifecycle engineering — transforming ideas into production-ready software solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================== CONTACT SECTION ======================== -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title fade-in slide-up">Contact <strong>Me</strong></h2>
+                <p class="section-subtitle fade-in slide-up">Have a project in mind or want to collaborate? Let's connect!</p>
+
+                <div class="contact-container">
+                    <div class="contact-info fade-in slide-left">
+                        <a href="mailto:itproarshad@gmail.com" class="contact-card" title="Click to send an email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>itproarshad@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="tel:+923053560550" class="contact-card" title="Click to call">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>03053560550</p>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Pakistan</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/arshad-it" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/arshad-kalhoro-b68b26272?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.facebook.com/share/1DSS2drHWC/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="https://wa.me/923053560550" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp (03053560550)">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:itproarshad@gmail.com" class="social-link" aria-label="Email" title="Send Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact-form fade-in slide-right" action="https://formsubmit.co/itproarshad@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_subject" value="New Portfolio Contact Message!">
+                        <input type="text" name="_honey" style="display:none">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="visually-hidden">Your Name</label>
+                                <input type="text" id="name" class="form-input" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="visually-hidden">Your Email</label>
+                                <input type="email" id="email" class="form-input" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="visually-hidden">Subject</label>
+                            <input type="text" id="subject" class="form-input" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="visually-hidden">Your Message</label>
+                            <textarea id="message" class="form-textarea" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer">
+        <div class="footer-container container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">
+                        <span class="nav-logo-icon">&lt;/&gt;</span>
+                        Arshad Ali
+                    </a>
+                    <p class="footer-text">Building modern web and mobile digital experiences that make a difference.</p>
+                </div>
+
+                <div class="footer-link-group">
+                    <h3>Quick Links</h3>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+
+                <div class="footer-link-group">
+                    <h3>Services</h3>
+                    <a href="#services">Web Development</a>
+                    <a href="#services">Android Development</a>
+                    <a href="#services">Full Projects</a>
+                </div>
+
+                <div class="footer-social-column">
+                    <h3>Connect</h3>
+                    <div class="footer-social">
+                        <a href="https://github.com/arshad-it" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/arshad-kalhoro-b68b26272?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/1DSS2drHWC/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" title="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://wa.me/923053560550" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp (03053560550)">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:itproarshad@gmail.com" aria-label="Email" title="Send Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Arshad Ali. All rights reserved.</p>
+            </div>
+        </div>
+
+        <button class="back-to-top" aria-label="Back to top" type="button">
+            <i class="fa-solid fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <!-- Custom Neon Cursor -->
+    <div class="cursor-dot" id="cursor-dot" aria-hidden="true">
+        <svg class="cursor-arrow-svg" viewBox="0 0 28 28" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 5 L23 12 L15 15 L12 23 Z" class="cursor-arrow-path"/>
+        </svg>
+    </div>
+    <canvas id="cursor-canvas" class="cursor-canvas" aria-hidden="true"></canvas>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/cursor.js"></script>
+
+</body>
+</html>

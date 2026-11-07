@@ -1,0 +1,570 @@
+/* ================================================================
+   Portfolio Website — Fully Responsive Styles (Mobile & Tablet)
+   ================================================================ */
+
+/* ================================================================
+   1. Large Tablets & Small Laptops (max-width: 1024px)
+   ================================================================ */
+@media (max-width: 1024px) {
+  .hero-container {
+    gap: 30px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .about-image-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .about-stats {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-btn {
+    margin: 0 auto;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-info {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .contact-form {
+    max-width: 650px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+}
+
+/* ================================================================
+   2. Mobile Navigation & Tablet Portrait (max-width: 992px)
+   ================================================================ */
+@media (max-width: 992px) {
+  /* Navigation */
+  .hamburger {
+    display: flex;
+  }
+
+  .desktop-cv-btn {
+    display: none;
+  }
+
+  .mobile-cv-item {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mobile-cv-btn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 20px;
+    text-align: center;
+  }
+
+  /* Slide-in Mobile Drawer */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: min(310px, 82vw);
+    height: 100vh;
+    height: 100dvh;
+    background: rgba(12, 7, 24, 0.98);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 95px 24px 30px;
+    gap: 12px;
+    transform: translateX(100%);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.32s ease;
+    z-index: 999;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.7);
+    border-left: 1px solid var(--glass-border);
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .nav-link {
+    display: block;
+    font-size: 1.05rem;
+    padding: 12px 18px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+  }
+
+  .nav-link:hover {
+    background: rgba(124, 58, 237, 0.15);
+    border-color: rgba(124, 58, 237, 0.2);
+  }
+
+  .nav-link.active {
+    background: var(--gradient-1);
+    color: #fff;
+  }
+
+  /* Hero Section on Mobile & Tablet:
+     Dedicated mobile showcase showing FULL developer portrait,
+     glowing laptop with </>, coffee mug, desk, and code monitor without any cropping */
+  .hero {
+    min-height: auto;
+    background: radial-gradient(ellipse at top center, rgba(124, 58, 237, 0.18) 0%, rgba(10, 6, 18, 0.98) 75%);
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: clamp(85px, 12vh, 105px);
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 580px;
+    background: none;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
+  }
+
+  .hero-image {
+    display: none;
+  }
+
+  /* Dedicated Mobile Hero Image Showcase */
+  .hero-image-mobile {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin: 15px auto 0;
+  }
+
+  .hero-mobile-frame {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 1px solid rgba(167, 139, 250, 0.35);
+    box-shadow: 0 16px 45px rgba(0, 0, 0, 0.65), 0 0 35px rgba(124, 58, 237, 0.25);
+    background: #0D0819;
+  }
+
+  .hero-mobile-frame picture {
+    display: block;
+    width: 100%;
+  }
+
+  .hero-mobile-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 21px;
+    transform: translateZ(0);
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 22px;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* Hero Features Section */
+  .hero-features {
+    padding: 30px 0;
+  }
+
+  .hero-features .hero-bottom-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Projects & Services in 2 columns on tablet */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+/* ================================================================
+   3. Medium Smartphones & Phablets (max-width: 768px)
+   ================================================================ */
+@media (max-width: 768px) {
+  section {
+    padding: 55px 0;
+  }
+
+  /* Typography fluid adjustments */
+  .section-title {
+    font-size: clamp(1.6rem, 5vw, 2.1rem);
+  }
+
+  .section-subtitle {
+    font-size: 0.92rem;
+    margin-bottom: 35px;
+    padding: 0 10px;
+  }
+
+  /* Tech Strip: 3-column neat grid on mobile instead of awkward flex wrapping */
+  .tech-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    padding: 14px 12px;
+  }
+
+  .tech-item {
+    min-width: 0;
+    width: 100%;
+    padding: 10px 6px;
+  }
+
+  .tech-item i {
+    font-size: 1.5rem;
+  }
+
+  .tech-item span {
+    font-size: 0.72rem;
+  }
+
+  /* Service Highlights: full width stacked */
+  .service-highlights {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .service-highlight-card {
+    width: 100%;
+    flex: none;
+    padding: 14px 16px;
+  }
+
+  /* About Section stats */
+  .about-stats {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .stat-item {
+    padding: 14px 24px;
+    max-width: 260px;
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 1.6rem;
+  }
+
+  .stat-label {
+    font-size: 0.82rem;
+  }
+
+  /* Services Grid single column */
+  .service-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-card {
+    padding: 28px 20px;
+  }
+
+  /* Projects Grid single column */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .project-image {
+    height: 175px;
+  }
+
+  /* Form row: stack inputs vertically */
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form {
+    padding: 22px 16px;
+  }
+
+  /* Prevent iOS zoom on input focus: font-size must be at least 16px */
+  .form-input,
+  .form-textarea {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    max-width: 100%;
+  }
+
+  .footer-logo a {
+    justify-content: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-link-group a:hover {
+    transform: none;
+  }
+}
+
+/* ================================================================
+   4. Standard Mobile Phones (max-width: 480px)
+   ================================================================ */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Navbar */
+  .nav-logo-text {
+    font-size: 1.05rem;
+  }
+
+  .nav-logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1.2rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: clamp(1.85rem, 7vw, 2.3rem);
+    letter-spacing: -0.5px;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.1rem, 4.2vw, 1.3rem);
+  }
+
+  .hero-badge {
+    font-size: 0.82rem;
+    padding: 6px 14px;
+    margin-bottom: 12px;
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.92rem;
+  }
+
+  /* Filter buttons & Tabs */
+  .skill-tabs,
+  .project-filters {
+    gap: 6px;
+    margin-bottom: 28px;
+  }
+
+  .skill-tab,
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+
+  /* Skill cards */
+  .skill-card {
+    padding: 16px;
+  }
+
+  .skill-icon {
+    font-size: 1.9rem;
+    margin-bottom: 8px;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  /* Project cards */
+  .project-info {
+    padding: 18px 14px;
+  }
+
+  .project-title {
+    font-size: 1.15rem;
+  }
+
+  .project-description {
+    font-size: 0.86rem;
+    margin-bottom: 14px;
+  }
+
+  .project-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+  }
+
+  .project-link {
+    justify-content: center;
+    padding: 10px;
+    background: rgba(124, 58, 237, 0.12);
+    border: 1px solid rgba(124, 58, 237, 0.2);
+    border-radius: 8px;
+  }
+
+  /* Contact Cards */
+  .contact-card {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .contact-card i {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+  }
+
+  .contact-card h3 {
+    font-size: 0.92rem;
+  }
+
+  .contact-card p {
+    font-size: 0.82rem;
+    word-break: break-all;
+  }
+
+  /* Back to Top */
+  .back-to-top {
+    bottom: 18px;
+    right: 18px;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}
+
+/* ================================================================
+   5. Compact Mobile Screens (max-width: 360px)
+   ================================================================ */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.05rem;
+  }
+
+  .tech-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-stats {
+    width: 100%;
+  }
+
+  .stat-item {
+    max-width: 240px;
+    padding: 12px 18px;
+  }
+}
+
+/* ================================================================
+   6. Touch Target Accessibility (pointer: coarse)
+   ================================================================ */
+@media (hover: none) and (pointer: coarse) {
+  .nav-link,
+  .skill-tab,
+  .filter-btn,
+  .project-link,
+  .btn-primary,
+  .btn-outline,
+  .download-cv-btn,
+  .social-link {
+    min-height: 44px;
+  }
+
+  .service-card:hover,
+  .skill-card:hover,
+  .project-card:hover,
+  .stat-item:hover,
+  .contact-card:hover {
+    transform: none;
+  }
+}
