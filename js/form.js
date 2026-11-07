@@ -140,10 +140,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!isFormValid) return;
 
     // ============================================================
-    // Submit Form Data to itproarshad@gmail.com
+    // Submit Form Data to itproarshad@gmail.com via W3Forms
     // ============================================================
     const submitBtn = contactForm.querySelector('.submit-btn');
-    const originalText = submitBtn ? submitBtn.innerHTML : 'Send Message';
+    const originalText = submitBtn ? submitBtn.innerHTML : '<i class="fa-solid fa-paper-plane"></i> Send Message';
 
     if (submitBtn) {
       submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
@@ -151,9 +151,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const formData = new FormData(contactForm);
+    if (!formData.get('access_key')) {
+      formData.append('access_key', 'w3f_c2c310dbacc462acb2f25f9102d81c488ba00ecbe4c4dc76');
+    }
     const data = Object.fromEntries(formData.entries());
 
-    fetch('https://formsubmit.co/ajax/itproarshad@gmail.com', {
+    fetch('https://api.w3forms.com/submit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -162,46 +165,43 @@ document.addEventListener('DOMContentLoaded', () => {
       body: JSON.stringify(data)
     })
     .then((response) => response.json())
-    .then(() => {
-      if (submitBtn) {
-        submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent! ✓';
-        submitBtn.classList.add('success');
+    .then((result) => {
+      if (result.success) {
+        if (submitBtn) {
+          submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Message Sent! ✓';
+          submitBtn.classList.add('success');
+        }
+        contactForm.reset();
+        contactForm.querySelectorAll('.form-group').forEach((group) => {
+          group.classList.remove('focused');
+        });
+      } else {
+        if (submitBtn) {
+          submitBtn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Error sending message';
+        }
       }
 
       setTimeout(() => {
-        contactForm.reset();
         if (submitBtn) {
           submitBtn.innerHTML = originalText;
           submitBtn.classList.remove('success');
           submitBtn.disabled = false;
         }
-
-        contactForm.querySelectorAll('.form-group').forEach((group) => {
-          group.classList.remove('focused');
-        });
-      }, 3500);
+      }, 4000);
     })
     .catch((error) => {
-      // Fallback: If network issue, open direct mailto prefilled to itproarshad@gmail.com
-      console.warn('Direct submit fallback to mailto:', error);
-      const name = contactForm.querySelector('[name="name"]')?.value || '';
-      const subject = contactForm.querySelector('[name="subject"]')?.value || 'Portfolio Contact';
-      const message = contactForm.querySelector('[name="message"]')?.value || '';
-
-      const mailtoLink = `mailto:itproarshad@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + "\n\n" + message)}`;
-      window.location.href = mailtoLink;
-
+      console.error('Submission error:', error);
       if (submitBtn) {
-        submitBtn.innerHTML = '<i class="fa-solid fa-check"></i> Email Client Opened! ✓';
-        submitBtn.classList.add('success');
+        submitBtn.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Failed to send. Please retry.';
+      }
 
-        setTimeout(() => {
-          contactForm.reset();
+      setTimeout(() => {
+        if (submitBtn) {
           submitBtn.innerHTML = originalText;
           submitBtn.classList.remove('success');
           submitBtn.disabled = false;
-        }, 3500);
-      }
+        }
+      }, 4000);
     });
   });
 
