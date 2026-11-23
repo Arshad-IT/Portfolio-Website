@@ -1,4 +1,4 @@
-# Arshad Ali — Developer Portfolio Website 🚀
+Arshad Ali — Developer Portfolio Website 
 
 [![Live Website](https://img.shields.io/badge/Live_Demo-Visit_Portfolio-7C3AED?style=for-the-badge&logo=cloudflare&logoColor=white)](https://arshad-ali.kalhoro.workers.dev)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
@@ -7,29 +7,29 @@ A modern, high-performance, dark glassmorphism developer portfolio showcasing my
 
 ---
 
-## 🌐 Live Preview
+## Live Preview
 
 - **Live URL:** [https://arshad-ali.kalhoro.workers.dev](https://arshad-ali.kalhoro.workers.dev)
 - **Deployment Platform:** Cloudflare Workers / Pages
 
 ---
 
-## ✨ Features
+## Features
 
-- **⚡ Blazing Fast Performance:**
+- ** Blazing Fast Performance:**
   - Modern WebP image formats reducing total page payload by **94%**.
   - Dual responsive art direction (custom desktop hero layout + dedicated mobile portrait showcase).
   - Preloaded critical LCP hero assets and lazy-loaded below-the-fold media.
   - Zero layout shift (CLS) with explicit aspect ratios and image dimensions.
-- **🎨 Glassmorphism & Modern Dark UI:** Deep indigo-purple palette, subtle glowing accents, and smooth glass card effects.
-- **📱 100% Fully Responsive:** Pixel-perfect layout across desktop monitors, tablets, and compact mobile phones.
-- **🛠️ Interactive Filtering:** Real-time project filter system (Web / Android / All).
-- **📝 Working Contact Form:** Complete with client-side validation, error handling, and toast feedback notifications.
-- **🎯 Custom Cursor & Micro-Interactions:** Custom interactive cursor on desktop and smooth hover effects.
+- ** Glassmorphism & Modern Dark UI:** Deep indigo-purple palette, subtle glowing accents, and smooth glass card effects.
+- ** 100% Fully Responsive:** Pixel-perfect layout across desktop monitors, tablets, and compact mobile phones.
+- ** Interactive Filtering:** Real-time project filter system (Web / Android / All).
+- ** Working Contact Form:** Complete with client-side validation, error handling, and toast feedback notifications.
+- ** Custom Cursor & Micro-Interactions:** Custom interactive cursor on desktop and smooth hover effects.
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 - **Frontend:** HTML5, CSS3 (Custom Properties & Flexbox/Grid), Vanilla JavaScript (ES6+)
 - **Design System:** Custom Dark Glassmorphic Theme, Font Awesome 6.5, Google Fonts (Poppins)
@@ -38,7 +38,7 @@ A modern, high-performance, dark glassmorphism developer portfolio showcasing my
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```plaintext
 portfolio-website/
@@ -65,7 +65,7 @@ portfolio-website/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Arshad Ali**  
 *Web & App Developer*  
